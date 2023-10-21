@@ -1,0 +1,159 @@
+.breed-list {
+  padding: 3rem 2rem;
+}
+
+.breed-list ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.breed-list li {
+  font-size: 18px;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #0f2d25;
+  float: left;
+}
+
+.event-cards {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.event-card {
+  border-radius: 10px;
+  /* margin-right: 3rem; */
+  /* margin: 2rem 1rem 2rem 1rem; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* margin-bottom: 3rem; */
+  /* box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15); */
+}
+
+.event-card > div {
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: "Crimson Text";
+  align-items: center;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(135deg, #0f2d25 11.2%, #217a77 100%);
+  cursor: pointer;
+}
+
+.event-header > div {
+  text-align: center;
+}
+
+.event-header p {
+  margin: 0;
+}
+
+.date {
+  font-size: 30px;
+}
+
+.month {
+  font-size: 20px;
+}
+
+.event-header h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.vl {
+  border-left: 1px solid white;
+  height: 50px;
+  margin: 0 1rem;
+}
+
+.event-details-heading {
+  /* font-size: large; */
+  color: #5f5f5f;
+}
+
+.event-details-text {
+  font-family: "Nunito";
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  color: #0f2d25;
+}
+
+.switch-events {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  column-gap: 30px;
+}
+
+.switch-events button {
+  border: 1px solid grey;
+  border-radius: 100px;
+  font-family: "Crimson Text";
+  font-size: larger;
+  padding: 0.5rem 1rem;
+  background: rgba(31, 255, 195, 0.1);
+  color: grey;
+}
+
+.switch-events button.active {
+  border: 1px solid #0f2d25;
+  border-radius: 100px;
+  font-weight: bold;
+  font-family: "Crimson Text";
+  font-size: larger;
+  padding: 0.5rem 1rem;
+  background: rgba(31, 255, 195, 0.1);
+  color: #0f2d25;
+}
+
+@media screen and (max-width: 769px) {
+  .breed-cards {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .breed-card {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .breed-card {
+    width: 90%;
+  }
+
+  .event-header {
+    padding: 0 !important;
+    /* justify-content: center; */
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .breed-card {
+    width: 100%;
+  }
+
+  .event-header {
+    text-align: center;
+  }
+}

@@ -1,0 +1,220 @@
+.initial-display {
+  padding: 3rem 0rem;
+  position: relative;
+  background: linear-gradient(135deg, #0f2d25 11.2%, #217a77 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* z-index: -2; */
+}
+
+.initial-display h1 {
+  font-family: "Crimson Text";
+  font-size: 45px;
+  /* width: 50%; */
+  margin: 0;
+  position: relative;
+}
+
+.initial-display h1:first-child:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../assets/images/heading-dec-white.png");
+  background-size: 50px;
+  position: absolute;
+  top: -35px;
+  width: 50px;
+  height: 50px;
+}
+
+.initial-display p {
+  font-family: "Nunito";
+  font-size: larger;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.initial-text {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.masked-logo {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  left: 0;
+  z-index: -1;
+}
+
+.masked-logo img {
+  position: relative;
+  width: 70%;
+}
+
+.breed-footer {
+  display: grid;
+  grid-template-columns: min-content 100%;
+  width: 100%;
+}
+
+.breed-footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-handles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.social-handles svg {
+  margin-bottom: 1rem;
+}
+
+.detail-table-list {
+  margin: 1% 8% 5% 8%;
+}
+
+.detail-table h1 {
+  margin-top: 5rem;
+  font-family: "Crimson Text";
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.detail-table .stud-table {
+  border-collapse: collapse;
+  width: 100%;
+
+  /* border-spacing: 10px 30px; */
+}
+
+.table-header {
+  font-family: "Crimson Text";
+  font-size: 17px;
+  background-color: #c0a147;
+  color: white;
+}
+
+.table-header th {
+  padding: 10px;
+}
+
+.table-header th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table-header th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.stud-table tr {
+  border-bottom: 0.01rem solid #5f5f5f;
+}
+
+.stud-table td {
+  text-align: center;
+  padding: 10px;
+  color: #5f5f5f;
+  font-family: "Nunito";
+}
+
+@media screen and (max-width: 500px) {
+  .initial-text {
+    padding: 0 1rem;
+  }
+
+  .initial-text h1 {
+    font-size: xx-large;
+  }
+
+  .initial-text p {
+    margin-bottom: 0.5rem;
+  }
+
+  .breed-footer {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+
+  .breed-footer > div > button {
+    margin-left: 0;
+  }
+
+  .breed-footer > div {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breed-footer svg {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .social-handles {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .detail-table-list {
+    margin: 1% 5% 10% 5%;
+  }
+
+  .detail-table h1 {
+    margin-top: 2rem;
+    font-family: "Crimson Text";
+    text-align: center;
+  }
+
+  .breed-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .breed-image {
+    width: 90%;
+  }
+
+  .bottom {
+    margin-top: 2rem;
+    align-self: center;
+  }
+
+  .initial-display h1 {
+    width: min-content;
+  }
+
+  .initial-display h1:after {
+    top: -35px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+  }
+  .stud-table {
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .initial-text {
+    padding: 0;
+  }
+}

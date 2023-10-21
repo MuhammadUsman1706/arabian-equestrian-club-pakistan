@@ -1,0 +1,62 @@
+.drawer-open {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.drawer-open h1 {
+  position: relative;
+  /* text-align: right; */
+}
+
+.drawer-open h1:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../assets/images/heading-dec.png");
+  background-size: 40px;
+  position: absolute;
+  top: -25px;
+  right: -30px;
+  width: 40px;
+  height: 40px;
+}
+
+.view-controller {
+  min-width: max-content;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+}
+
+.view-controller > div {
+  padding: 1rem 2rem;
+  font-family: "Crimson Text";
+  font-weight: 600;
+  font-size: 20px;
+  color: #5f5f5f;
+  border-top: 2px solid #eeeeee;
+}
+
+.view-controller .active {
+  color: #0f2d25;
+  border-left: 3px solid #0f2d25;
+  background-color: #e8eeed;
+}
+
+@media screen and (max-width: 900px) {
+  .drawer-open button {
+    display: inline !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .drawer-open h1 {
+    font-size: x-large !important;
+  }
+
+  .drawer-open h1:after {
+    background-size: 30px;
+    top: -20px;
+    right: -25px;
+    width: 30px;
+    height: 30px;
+  }
+}

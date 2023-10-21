@@ -1,0 +1,57 @@
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title h2 {
+  font-family: "Crimson Text";
+  margin-bottom: 0;
+}
+
+.modal-title span {
+  color: #c0a147;
+}
+
+.lease-details h1 {
+  font-family: "Crimson Text";
+}
+
+.lease-details hr {
+  width: 50%;
+  margin-left: 0;
+}
+
+.lease-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1rem 0;
+  font-family: "Nunito";
+}
+
+.lease-details li {
+  margin: 0.5rem 0;
+}
+
+.lease-details span {
+  font-family: "Crimson Text";
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: large;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-title h2 {
+    font-size: larger;
+  }
+
+  .lease-details h1 {
+    font-size: x-large;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .lease-details span {
+    display: block;
+  }
+}

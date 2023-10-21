@@ -1,0 +1,178 @@
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title-header {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+}
+
+.modal-title-header > div {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.modal-title-header * {
+  margin: 0;
+}
+
+.modal-title h3 {
+  font-family: "Crimson Text";
+  margin-bottom: 0;
+}
+
+/* .title-text {
+  font-family: "Nunito";
+  font-size: 17px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.balance {
+  font-family: "Crimson Text";
+  font-size: large;
+  color: #c0a147;
+} */
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  /* column-gap: 50px; */
+}
+
+.inputs > div {
+  display: flex;
+  width: 100%;
+  column-gap: 50px;
+}
+
+.inputs > div > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputs label {
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputs select,
+.inputs input {
+  padding: 0.7rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: large;
+}
+
+.radio-buttons {
+  margin-top: 1rem;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #0f2d25;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 0 0 5px 0px gray inset;
+}
+
+input[type="radio"]:hover {
+  box-shadow: 0 0 5px 0px orange inset;
+}
+
+input[type="radio"]:checked:before {
+  background: #0f2d25;
+}
+
+input[type="radio"]:before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;
+  border-radius: 50%;
+}
+
+/* .notice h1 {
+  font-family: "Crimson Text";
+}
+
+.notice p {
+  font-family: "Nunito";
+}
+
+.notice > div {
+  display: flex;
+  column-gap: 20px;
+}
+
+.notice-para {
+  max-width: 70%;
+}
+
+.notice-para hr {
+  margin: 0;
+}
+
+.fee-card {
+  border: 1px solid #c0a147;
+  padding: 0.7rem 2rem;
+  background: rgba(192, 161, 71, 0.05);
+  width: max-content;
+} */
+
+.close {
+  padding: 0.5rem 3rem;
+  background-color: white;
+  color: #0f2d25;
+  border-radius: 100px;
+  border: 1px solid #0f2d25;
+  font-size: 18px;
+  font-family: "Crimson Text";
+  cursor: pointer;
+}
+
+.submit {
+  padding: 0.5rem 3rem;
+  background-color: #0f2d25;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  font-family: "Crimson Text";
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-title-header > div {
+    flex-direction: column;
+  }
+
+  .inputs > div {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .close,
+  .submit {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal-title-header {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,121 @@
+.farm-list {
+  padding: 3rem 2rem;
+}
+
+.farm-list ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.farm-list li {
+  font-size: 18px;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #0f2d25;
+  float: left;
+}
+
+.farm-cards {
+  display: flex;
+  justify-content: center;
+  column-gap: 35px;
+  row-gap: 35px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.farm-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  transition: all 0.5s;
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.2));
+}
+
+.farm-card::after {
+  transition: all 0.5s;
+  border-radius: 20px;
+  box-shadow: inset 0 -25px 30px 10px rgba(0, 0, 0, 0.9);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.farm-card:hover {
+  transform: scale(1.1);
+}
+
+.farm-card:hover h2 {
+  transition: bottom 0.5s;
+  bottom: 20%;
+}
+
+.farm-card:hover .farm-name {
+  transition: bottom 0.5s;
+  bottom: 30%;
+}
+
+.farm-card:hover::after {
+  box-shadow: inset 0 -100px 30px 10px rgba(0, 0, 0, 0.9);
+}
+
+.farm-card h2 {
+  font-family: "Crimson Text";
+  font-weight: normal;
+  color: white;
+  bottom: -10px;
+  /* left: 50%; */
+  z-index: 1;
+  text-align: center;
+  /* background-color: transparent; */
+  position: absolute;
+}
+
+h2.farm-name {
+  bottom: 20px;
+}
+
+.farm-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .farm-cards {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .farm-card {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .farm-cards {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .farm-card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .farm-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .farm-card {
+    width: 100%;
+  }
+}

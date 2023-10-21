@@ -1,0 +1,235 @@
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title h2 {
+  font-family: "Crimson Text";
+  margin-bottom: 0;
+}
+
+.title-text {
+  font-family: "Nunito";
+  font-size: 17px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.title-text span {
+  color: #c0a147;
+}
+
+.balance {
+  font-family: "Crimson Text";
+  font-size: large;
+  margin: 0.5rem 0;
+  color: #c0a147;
+}
+
+.balance span {
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+  column-gap: 50px;
+}
+
+.inputs > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputs label {
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputs select {
+  padding: 0.7rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: large;
+}
+
+.notice h1 {
+  font-family: "Crimson Text";
+}
+
+.notice p {
+  font-family: "Nunito";
+}
+
+.notice > div {
+  display: flex;
+  column-gap: 20px;
+}
+
+.notice-para {
+  max-width: 55%;
+}
+
+.notice-para hr {
+  margin: 0;
+}
+
+.fee-card {
+  border: 1px solid #c0a147;
+  padding: 0.7rem 2rem;
+  background: rgba(192, 161, 71, 0.05);
+  width: max-content;
+  text-align: center;
+}
+
+.close {
+  padding: 0.5rem 3rem;
+  background-color: white;
+  color: #0f2d25;
+  border-radius: 100px;
+  border: 1px solid #0f2d25;
+  font-size: 18px;
+  font-family: "Crimson Text";
+  cursor: pointer;
+}
+
+.submit {
+  padding: 0.5rem 3rem;
+  background-color: #0f2d25;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  font-family: "Crimson Text";
+  cursor: pointer;
+}
+
+.registration-details {
+  display: flex;
+  column-gap: 15%;
+  /* justify-content: space-between; */
+}
+
+.detail-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito";
+}
+
+.detail-list li {
+  margin-bottom: 0.5rem;
+}
+
+.detail-list span {
+  font-size: large;
+  font-family: "Crimson Text";
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.sub-headings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub-heading {
+  font-family: "Crimson Text";
+  margin-bottom: 0;
+}
+
+.sub-heading span {
+  color: #c0a147;
+}
+
+.inputs2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.inputs2 > div:first-child {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.inputs2 > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  width: 100%;
+}
+
+.inputs2 > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputs2 label {
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputs2 select,
+.inputs2 input {
+  padding: 0.7rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: large;
+}
+
+@media screen and (max-width: 500px) {
+  .notice > div {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .notice-para {
+    max-width: 100%;
+  }
+
+  .inputs {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .registration-details {
+    flex-direction: column;
+  }
+
+  .close,
+  .submit {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .inputs {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .inputs2 > div:first-child {
+    width: 100%;
+  }
+
+  .inputs2 > div:nth-child(2) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .fee-card {
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 500px) {
+} */

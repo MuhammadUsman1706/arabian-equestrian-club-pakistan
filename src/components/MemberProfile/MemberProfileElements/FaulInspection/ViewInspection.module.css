@@ -1,0 +1,63 @@
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title h2 {
+  font-family: "Crimson Text";
+  margin-bottom: 0;
+}
+
+.title-text {
+  font-family: "Nunito";
+  font-size: 17px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.certificate-details {
+  display: flex;
+  flex-direction: row;
+  column-gap: 100px;
+  justify-content: space-around;
+}
+
+.certificate-details h2 {
+  font-family: "Crimson Text";
+}
+
+.certificate-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certificate-details li {
+  margin-top: 0.5rem;
+}
+
+.field {
+  font-family: "Crimson Text";
+  font-weight: bold;
+  color: #0f2d25;
+  font-size: 18px;
+}
+
+.value {
+  font-family: "Nunito";
+  font-size: 16px;
+  color: #5f5f5f;
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .certificate-details {
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+  }
+
+  .modal-title h2 {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,97 @@
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title h2 {
+  font-family: "Crimson Text";
+  margin-bottom: 0;
+}
+
+.modal-title span {
+  color: #c0a147;
+}
+
+.sub-heading {
+  font-family: "Crimson Text";
+  color: #c0a147;
+  font-size: 20px;
+}
+
+.sub-heading span {
+  font-weight: bold;
+}
+
+.close {
+  padding: 0.5rem 3rem;
+  background-color: white;
+  color: #0f2d25;
+  border-radius: 100px;
+  border: 1px solid #0f2d25;
+  font-size: 18px;
+  font-family: "Crimson Text";
+  cursor: pointer;
+}
+
+.submit {
+  padding: 0.5rem 3rem;
+  background-color: #0f2d25;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  font-family: "Crimson Text";
+  cursor: pointer;
+}
+
+.inputs {
+  margin-top: 1rem;
+  display: flex;
+  column-gap: 50px;
+}
+
+.inputs > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.enter-details label {
+  font-family: "Crimson Text";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputs input,
+.inputs select {
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: large;
+}
+
+.enter-details textarea {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.7rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: large;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-title h2 {
+    font-size: larger;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+
+  .close,
+  .submit {
+    width: 50%;
+  }
+}

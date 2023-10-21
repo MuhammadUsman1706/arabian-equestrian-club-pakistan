@@ -1,0 +1,293 @@
+/* .landing {
+} */
+
+.initial-display {
+  margin: 0rem 0rem;
+  /* padding-bottom: 2rem; */
+  position: relative;
+  background: linear-gradient(135deg, #0f2d25 11.2%, #217a77 100%);
+  color: white;
+  /* display: flex; */
+  justify-content: space-between;
+  /* z-index: -2; */
+}
+
+.initial-display h1 {
+  font-family: "Crimson Text";
+  font-size: 45px;
+  position: relative;
+  width: 50%;
+}
+
+.initial-display h1:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../assets/images/heading-dec-white.png");
+  background-size: 50px;
+  position: absolute;
+  top: -35px;
+  width: 50px;
+  height: 50px;
+}
+
+.initial-display p {
+  font-family: "Nunito";
+  position: relative;
+}
+
+.initial-image {
+  display: flex;
+  align-items: flex-end;
+  /* width: 90%; */
+  /* justify-content: flex-end; */
+}
+/* 
+.initial-display img {
+  position: relative;
+  bottom: 0;
+} */
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  /* justify-content: stretch;
+  align-items: stretch; */
+}
+
+.initial-text {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4rem;
+  width: 60%;
+  padding: 3rem 0;
+}
+
+.masked-logo {
+  position: absolute;
+  /* top: 0; */
+  /* max-height: 100%; */
+  z-index: 0;
+}
+
+.btn {
+  /* align-items: center; */
+  display: flex;
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+  width: max-content;
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.btn-text {
+  display: flex;
+  align-items: center;
+  transition: color 1s;
+  font-size: larger;
+  color: white;
+}
+
+.btn::before {
+  border-radius: 100px;
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 30%;
+  height: 100%;
+  background: #0f2d25;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn:hover::before {
+  /* transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+  width: 100%;
+  background-color: white;
+}
+
+.btn:hover .btn-text {
+  color: black;
+}
+
+.btn span {
+  z-index: 10;
+}
+
+.social-handles {
+  margin: 2rem 0 0 0;
+  position: relative;
+}
+
+.social-handles svg {
+  margin-right: 1rem;
+}
+
+.initial-display img {
+  width: 100%;
+}
+
+.container {
+  margin: 5rem auto;
+  margin-bottom: 2.5rem;
+  padding: 0 4rem;
+  /* width: 85%; */
+}
+
+.stud-cards {
+  display: flex;
+  column-gap: 50px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 2rem;
+  /* height: max-content !important; */
+}
+
+.stud-cards > div {
+  width: 40%;
+  min-width: 300px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.stud-data-contents {
+  padding: 0.5rem 1rem;
+}
+
+.stud-data-main-heading {
+  font-family: "Crimson Text";
+  margin: -0.5rem -1rem 1rem -1rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  background-color: #0f2d25;
+  color: white;
+  padding: 1rem 0;
+}
+.stud-head{
+  position: relative;
+  width: 15%;
+  margin: auto;
+}
+.stud-head:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../assets/images/heading-dec-white.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  width: 30px;
+  height: 30px;
+}
+.stud-cards img {
+  width: 100%;
+}
+
+.stud-cards p {
+  margin: 0.5rem 0;
+}
+
+.stud-data-heading {
+  font-weight: bold;
+  color: #0f2d25;
+  font-family: "Crimson Text";
+  /* margin-bottom: 1rem; */
+}
+
+.stud-data-content {
+  color: #5f5f5f;
+  font-family: "Nunito";
+  font-size: larger;
+  /* margin-bottom: 1rem; */
+}
+
+.stud-data-content a {
+  text-decoration: none;
+  color: #5f5f5f;
+}
+
+/* Global */
+.main-heading {
+  color: #0f2d25;
+  font-family: "Crimson Text";
+  font-size: 34px;
+  position: relative;
+  margin: 1rem auto;
+  width: max-content;
+}
+
+.main-heading:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../assets/images/heading-dec.png");
+  background-size: 40px;
+  position: absolute;
+  top: -30px;
+  right: -32px;
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1025px) {
+  .initial-text {
+    padding: 1rem 0;
+    margin-left: 2rem;
+    /* width: 80%; */
+  }
+  .initial-text h1 {
+    font-size: 2em;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .initial-text p {
+    margin-bottom: 0;
+  }
+
+  .stud-cards > div {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .initial-image {
+    display: none;
+    width: 0%;
+  }
+
+  .initial-text {
+    display: flex;
+    /* align-items: center;
+    text-align: center; */
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .stud-cards > div {
+    width: 90%;
+  }
+
+  .initial-text h1::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    padding: 0 0.4rem;
+  }
+}

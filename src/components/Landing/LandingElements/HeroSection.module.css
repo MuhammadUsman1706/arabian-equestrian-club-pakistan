@@ -1,0 +1,85 @@
+.hero-section {
+  margin: 3rem auto;
+  max-width: 1200px;
+}
+
+.parent {
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2rem;
+  display: flex;
+  overflow: hidden;
+  column-gap: 1rem;
+}
+
+.text {
+  width: 90%;
+}
+
+.text h1,
+.text h2 {
+  margin: 0;
+  font-family: "Crimson Text";
+}
+
+.text h1 {
+  font-size: 3em;
+}
+
+.text h2 {
+  font-size: 2em;
+  color: #103028;
+}
+
+.text p {
+  font-family: "Nunito";
+  font-size: 1.2em;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1250px) {
+  .hero-section {
+    margin: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .image {
+    display: none;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .text h1 {
+    font-size: xx-large;
+  }
+
+  .text h2 {
+    font-size: x-large;
+  }
+
+  .text p {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text h1,
+  .text h2 {
+    text-align: center;
+  }
+}

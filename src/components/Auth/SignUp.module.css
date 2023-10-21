@@ -1,0 +1,132 @@
+.signup {
+  margin: 2rem auto;
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem 3rem;
+}
+
+.signup h1 {
+  font-family: "Crimson Text";
+  width: max-content;
+  position: relative;
+}
+
+.signup h1:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../assets/images/heading-dec.png");
+  background-size: 40px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 40px;
+  height: 40px;
+}
+
+.signup p {
+  color: #5f5f5f;
+  font-family: "Nunito";
+  font-size: 17px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 40px;
+}
+
+.inputs label,
+.label {
+  margin: 0.5rem 0;
+  display: block;
+  color: #0f2d25;
+  font-weight: bold;
+}
+
+.inputs input,
+.inputs select {
+  padding: 0.7rem;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: large;
+}
+
+.inputs > div {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+}
+
+.fee-section {
+  width: max-content;
+  margin-top: 1rem;
+  padding: 0.5rem 4rem;
+  background-color: #fcfaf6;
+  border: 1px solid #c0a147;
+}
+
+.fee-section h4 {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.submit {
+  padding: 0.5rem 3rem;
+  background-color: #0f2d25;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  font-family: "Crimson Text";
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+  .signup {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .signup {
+    padding: 2rem;
+  }
+
+  .inputs {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .inputs > div {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .inputs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputs > div {
+    width: 100%;
+  }
+
+  .fee-section {
+    padding: 0.5rem 2rem;
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .signup {
+    text-align: justify;
+    padding: 1.5rem;
+  }
+
+  .fee-section {
+    padding: 0.5rem 1rem;
+    margin: 1rem auto;
+  }
+}

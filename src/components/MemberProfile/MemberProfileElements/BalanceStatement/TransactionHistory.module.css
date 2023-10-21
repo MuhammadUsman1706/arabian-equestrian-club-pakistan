@@ -1,0 +1,59 @@
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title h2 {
+  font-family: "Crimson Text";
+  margin-bottom: 0;
+}
+
+.modal-title span {
+  color: #c0a147;
+}
+
+.table-parent {
+  overflow-x: scroll;
+  margin-bottom: 2rem;
+}
+
+.stud-table {
+  border-collapse: collapse;
+  /* border-spacing: 10px 30px; */
+}
+
+.table-header {
+  font-family: "Crimson Text";
+  font-size: 17px;
+  background-color: #c0a147;
+  color: white;
+}
+
+.table-header th {
+  padding: 10px;
+}
+
+.table-header th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table-header th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.stud-table tr {
+  border-bottom: 0.01rem solid #5f5f5f;
+}
+
+.stud-table td {
+  text-align: center;
+  padding: 10px;
+  color: #5f5f5f;
+  font-family: "Nunito";
+}
+@media screen and (max-width: 500px) {
+  .modal-title h2 {
+    font-size: x-large;
+  }
+}

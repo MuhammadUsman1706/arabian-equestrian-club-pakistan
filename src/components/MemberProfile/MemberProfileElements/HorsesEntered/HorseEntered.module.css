@@ -1,0 +1,166 @@
+
+
+.tableBody{
+    border-bottom: 1.1px solid lightgray;
+}
+
+.showDiv{
+    display: flex;
+    flex-direction: column;
+}
+.showDetails{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0F2D25;
+}
+.showDate{
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #5F5F5F;
+}
+.stud-certificate-list {
+    /* padding: 1rem 2rem; */
+
+    /* hamza changes  */
+    padding: 1rem;
+
+  }
+  
+  .stud-certificate-list ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 3rem;
+  }
+  
+  .stud-certificate-list li {
+    font-size: 18px;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #0f2d25;
+    float: left;
+  }
+  
+  .stud-table {
+    border-collapse: collapse;
+    /* border-spacing: 10px 30px; */
+
+    /* hamza changes */
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .table-header {
+    font-family: "Crimson Text";
+    font-size: 17px;
+    background-color: #c0a147;
+    color: white;
+  }
+  
+  .table-header th {
+    padding: 10px;
+  }
+  
+  .table-header th:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  .table-header th:last-child {
+    border-top-right-radius: 10px;
+  }
+  
+  .certificate{
+    color: #C0A147 !important;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+
+  }
+  .certificate:hover{
+    border-bottom: 1px solid lightgray;
+    background: linear-gradient(135deg, #0F2D25 11.2%, #217A77 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+  }
+
+  .stud-table tr {
+    /* border-bottom: 0.01rem solid #5f5f5f; */
+  }
+  
+  .stud-table td {
+    text-align: center;
+    padding: 10px;
+    color: #5f5f5f;
+    font-family: "Nunito";
+
+    /* hamza changes  */
+    padding: 20px 0px 10px 0px;
+  }
+  
+  .Horsebtn {
+    /* align-items: center; */
+    display: flex;
+    overflow: visible;
+    background-color: transparent;
+    border: none;
+    width: max-content;
+    position: relative;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .Horse-btn-text {
+    display: flex;
+    align-items: center;
+    transition: color 1s;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0f2d25;
+  }
+  
+  .Horsebtn::before {
+    border-radius: 100px;
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: "";
+    width: 30%;
+    height: 75%;
+    background: rgba(192, 161, 71, 0.3);
+    position: absolute;
+    top: 7px;
+    left: 5px;
+  }
+  
+  .Horsebtn:hover::before {
+    /* transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+    width: 100%;
+    background-color: #0f2d25;
+  }
+  
+  .Horsebtn:hover .Horse-btn-text {
+    color: white;
+  }
+  
+  .Horsebtn span {
+    z-index: 10;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .stud-certificate-list {
+      overflow-x: scroll;
+    }
+  }
+  

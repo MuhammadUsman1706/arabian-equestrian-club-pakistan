@@ -1,0 +1,86 @@
+.login {
+  padding: 2rem 3rem;
+}
+
+.login h1 {
+  font-family: "Crimson text";
+  color: #0f2d25;
+  font-size: 34px;
+  position: relative;
+  width: max-content;
+  /* margin-bottom: 0; */
+}
+
+.login h1:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../assets/images/heading-dec.png");
+  background-size: 35px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
+  width: 35px;
+  height: 35px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+
+.inputs label,
+.label {
+  /* margin: 0.5rem 0; */
+  display: block;
+  color: #0f2d25;
+  font-weight: bold;
+}
+
+.inputs input {
+  padding: 0.7rem;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: large;
+}
+
+.forgot {
+  font-family: "Crimson Text";
+  font-size: 15px;
+  cursor: pointer;
+  align-self: flex-end;
+  border-bottom: 1px solid transparent;
+  transition: border 0.5s;
+}
+
+.forgot:hover {
+  border-bottom: 1px solid #0f2d25;
+}
+
+.submit {
+  padding: 0.5rem 3rem;
+  margin-top: 2rem;
+  background-color: #0f2d25;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  font-family: "Crimson Text";
+  cursor: pointer;
+  width: max-content;
+}
+
+@media screen and (max-width: 550px) {
+  .modal-box {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .login {
+    padding: 1rem 1.5rem;
+  }
+}

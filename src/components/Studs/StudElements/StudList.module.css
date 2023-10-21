@@ -1,0 +1,246 @@
+.stud-list {
+  padding: 3rem 2rem;
+}
+
+.stud-list ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.stud-list li {
+  font-size: 18px;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #0f2d25;
+  float: left;
+}
+
+.stud-cards {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.stud-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 1rem;
+  transition: all 0.5s;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.stud-card:hover {
+  transform: scale(1.05);
+}
+
+.stud-card h2 {
+  font-family: "Crimson Text";
+  font-weight: normal;
+  margin: 0;
+  z-index: 1;
+}
+
+.stud-card img {
+  width: 100px;
+  margin: 1rem;
+  border-radius: 20px;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.details > div {
+  display: flex;
+  color: black;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+}
+
+.male {
+  color: blue;
+}
+
+@media screen and (max-width: 769px) {
+  .stud-card img {
+    width: 110px;
+  }
+
+  .details {
+    row-gap: 0.5rem;
+  }
+
+  .details > div:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .details > div > span {
+    display: none;
+  }
+
+  .stud-list {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .details {
+    font-size: 10px;
+  }
+
+  .stud-card img {
+    width: 80px;
+    margin: 0.5rem;
+  }
+
+  .stud-card {
+    column-gap: 0.5rem;
+  }
+
+  /* .stud-card {
+    flex-direction: column;
+    width: max-content;
+    padding: 1rem;
+  }
+
+  .stud-card img {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .details {
+    width: max-content;
+  }
+
+  .details > div {
+    justify-content: center;
+  } */
+}
+
+/* OLD SMALL CARDS */
+/* .stud-list {
+  padding: 3rem 2rem;
+}
+
+.stud-list ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 3rem;
+}
+
+.stud-list li {
+  font-size: 18px;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #0f2d25;
+  float: left;
+}
+
+.stud-cards {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.stud-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  transition: all 0.5s;
+  filter: drop-shadow(0px 5px 25px rgba(0, 0, 0, 0.2));
+}
+
+.stud-card::after {
+  transition: all 0.5s;
+  border-radius: 20px;
+  box-shadow: inset 0 -25px 30px 10px rgba(0, 0, 0, 0.9);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.stud-card:hover {
+  transform: scale(1.1);
+}
+
+.stud-card:hover h2 {
+  transition: bottom 0.5s;
+  bottom: 20%;
+}
+
+.stud-card:hover::after {
+  box-shadow: inset 0 -100px 30px 10px rgba(0, 0, 0, 0.9);
+}
+
+.stud-card h2 {
+  font-family: "Crimson Text";
+  font-weight: normal;
+  color: white;
+  bottom: -10px;
+  z-index: 1;
+  text-align: center;
+  position: absolute;
+}
+
+.stud-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 769px) {
+  .stud-cards {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .stud-card {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .stud-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .stud-card {
+    width: 100%;
+  }
+} */

@@ -1,0 +1,1278 @@
+.initial-display {
+  padding: 3rem 0rem;
+  position: relative;
+  background: linear-gradient(135deg, #0f2d25 11.2%, #217a77 100%);
+  color: white;
+  /* display: flex; */
+  justify-content: space-between;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: -2;
+}
+
+.initial-display h1 {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.initial-display p {
+  font-family: "Nunito";
+  font-size: 22px;
+}
+
+.initial-text {
+  /* display: flex; */
+  /* gap: 40%; */
+  display: grid;
+  grid-template-columns: repeat(2, 33%);
+  /* justify-content: center; */
+  position: relative;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.masked-logo {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  left: 0;
+  z-index: -1;
+}
+
+.masked-logo img {
+  position: relative;
+  /* width: 70%; */
+  width: 40%;
+}
+
+.breed-footer {
+  /* display: grid;
+    grid-template-columns: min-content 100%;
+    justify-content: space-between;
+    align-items: center; */
+  /* width: 100%; */
+  margin: 2rem 0 0 0;
+}
+.AboutDiv {
+  /* display: "flex", flexDirection: "column", align-items: "center" */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: max-content; */
+  width: 100%;
+}
+
+@media screen and (max-width: 575px) {
+  .social-handles {
+    flex-direction: row !important;
+    gap: 20px;
+    justify-content: center;
+  }
+  .initial-text {
+    grid-template-columns: repeat(1, 100%);
+    justify-content: center;
+  }
+}
+
+.breed-footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.breed-footer > div > button {
+  font-size: 16px;
+  background-color: white;
+  color: #0f2d25;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+  border: none;
+  margin-left: 1rem;
+}
+
+.social-handles {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-handles svg {
+  margin-bottom: 1rem;
+}
+.AboutVectorImg {
+  position: relative;
+  display: flex;
+}
+.clear {
+  clear: both;
+}
+.lineImg {
+  width: 38.34px;
+  height: 37.46px;
+  position: absolute;
+  left: 95%;
+  bottom: 65%;
+}
+.AboutClub {
+  position: relative;
+}
+.clublineImg {
+  width: 38.34px;
+  height: 37.46px;
+  /* position:inherit; */
+  position: absolute;
+  /* left: 44%;
+    bottom: 38%; */
+}
+@media screen and (max-width: 767px) {
+  .clublineImg {
+    width: 30px !important;
+    height: 30px !important;
+    margin-top: 0%;
+    margin-left: -1%;
+  }
+}
+.AboutContainer {
+  padding: 96px;
+  width: 100%;
+}
+.sideBar {
+  width: 25% !important;
+}
+.mainContent {
+  width: 75% !important;
+}
+.cardDiv {
+  /* width: 300px; */
+  /* height: 612px !important; */
+  background: #ffffff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+}
+.AECPdiv {
+  display: flex;
+  height: 68px;
+  border-left: 3px solid #a7a7a7;
+  cursor: pointer;
+}
+.AECPText {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-fill-color: transparent;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  padding-left: 30px;
+  color: #5f5f5f;
+  width: 100%;
+}
+.cardBodyDiv {
+  /* height: 1139px; */
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+}
+
+.AECPBody {
+  padding: 25px;
+}
+
+.AboutHeading {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #0f2d25;
+  position: relative;
+}
+
+/* .AboutHeading::after{
+  content: ""; 
+  background-image: url("../../assets/images/heading-dec.png");
+  background-size: 38px;
+  position: absolute;
+  top: -1rem;
+  left: 13rem;
+  width: 38px;
+  height: 38px;
+
+} */
+.AECP-para {
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  /* display: flex; */
+  align-items: center;
+  color: #5f5f5f;
+}
+
+.active {
+  background-color: #e8eded;
+  border-left: 3px solid #0f2d25;
+}
+.active span {
+  background-color: #e8eded;
+  background: linear-gradient(135deg, #0f2d25 11.2%, #217a77 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn {
+  /* align-items: center; */
+  /* margin: auto; */
+  display: flex;
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+  width: max-content;
+  position: relative;
+  padding: 1rem 2rem;
+  margin-top: 25px;
+}
+
+.btn-text {
+  display: flex;
+  align-items: center;
+  transition: color 1s;
+  font-size: larger;
+  color: black;
+}
+
+.btn::before {
+  border-radius: 100px;
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 30%;
+  height: 100%;
+  background: rgba(192, 161, 71, 0.3);
+  /* background: #0f2d25; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn:hover::before {
+  width: 100%;
+  background: #0f2d25;
+}
+
+.btn:hover .btn-text {
+  color: white;
+}
+
+.btn span {
+  z-index: 10;
+}
+
+.Biobtn {
+  position: absolute;
+  display: flex;
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+  width: max-content;
+  padding: 0.5rem 0.8rem;
+  margin-top: 25px;
+}
+
+.Biotext {
+  display: flex;
+  align-items: center;
+  transition: color 1s;
+  font-size: larger;
+  color: black;
+}
+
+.Biobtn::before {
+  border-radius: 100px;
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 30%;
+  height: 100%;
+  background: rgba(192, 161, 71, 0.3);
+  /* background: #0f2d25; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Biobtn:hover::before {
+  width: 100%;
+  background: #0f2d25;
+}
+
+.Biobtn:hover .Biotext {
+  color: white;
+}
+
+.Biobtn span {
+  z-index: 10;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .initial-display h1 {
+    font-size: 38px !important;
+    line-height: 45px !important;
+  }
+  .initial-display p {
+    font-size: 18px !important;
+  }
+  .Biobtn {
+    padding: 1rem 0.8rem !important;
+    margin-top: 15px !important;
+  }
+  .btn::before {
+    height: 65% !important;
+    top: 11px !important;
+  }
+  .btn span {
+    font-size: 14px !important;
+    margin-left: -15px !important ;
+  }
+  .Biobtn::before {
+    height: 65% !important;
+    top: 11px !important;
+  }
+}
+.BreedStandard {
+  margin-top: 30px;
+}
+
+.HistoryModalDiv {
+  overflow-y: scroll;
+  max-height: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+.historyParadiv {
+  height: 525px;
+}
+.modalImg {
+  position: relative;
+  width: 100%;
+}
+.modalImg::before {
+  content: "";
+  background-image: url("../../assets/images/image.png");
+  background-size: cover;
+  position: absolute;
+  opacity: 0.05;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.BreedModalDiv {
+  overflow-y: scroll;
+  max-height: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+
+.rodal-close {
+  top: 75px !important;
+  right: 75px !important;
+}
+.standardHeading {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #0f2d25;
+}
+.standardModalText {
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #5f5f5f;
+}
+
+.SubcriptionDiv span {
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #c0a147;
+}
+.MemberShipDiv {
+  margin-top: 20px;
+}
+.MemberShipDiv h4 {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #0f2d25;
+}
+.MemberShipCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 27px;
+  /* width: 376px; */
+  width: 39%;
+  background: rgba(192, 161, 71, 0.05);
+  border: 0.5px solid #c0a147;
+  border-radius: 5px;
+}
+
+.MemberShipCard h5 {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  color: #0f2d25;
+  margin: 0px;
+}
+.MemberShipCard p {
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #5f5f5f;
+}
+.otherMemberShipCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 27px;
+  /* width: 376px; */
+  width: 55%;
+  background: rgba(192, 161, 71, 0.05);
+  border: 0.5px solid #c0a147;
+  border-radius: 5px;
+}
+.otherMemberShipCard h5 {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;
+  color: #0f2d25;
+  margin: 0px;
+}
+.otherMemberShipCard p {
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #5f5f5f;
+}
+.fee {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #0f2d25;
+}
+.otherText {
+  text-align: center;
+}
+.AccordionTitle {
+  border-bottom: 4px solid #c0a147 !important;
+  background: #ffffff;
+  box-shadow: 0px 2px 30px rgb(0 0 0 / 15%);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.AccordionItemBtn {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  color: #0f2d25;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 2px solid lightgray;
+}
+
+.AccordionHeading {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  color: #0f2d25;
+}
+.AccordionText {
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  /* display: flex; */
+  align-items: center;
+  color: #5f5f5f;
+  margin-top: 10px;
+}
+
+.MembershipInput {
+  margin-top: 20px;
+}
+.NameCnic {
+  display: flex;
+}
+.CityPhone {
+  display: flex;
+  margin-top: 15px;
+}
+.AddressEmail {
+  display: flex;
+  margin-top: 15px;
+}
+
+.inputLabel {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2d25 11.2%, #217a77 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 5px;
+}
+
+.InputField {
+  border: 1px solid #a7a7a7;
+  border-radius: 8px;
+  width: 95%;
+  height: 48px;
+  padding-left: 10px;
+  color: #a7a7a7;
+}
+.ChooseFile {
+  height: 48px;
+  background: #efefef !important;
+  color: #a7a7a7 !important;
+}
+.InputSelectField {
+  border: 1px solid #a7a7a7;
+  border-radius: 8px;
+  width: 95%;
+  height: 48px;
+  padding-left: 10px;
+  color: #a7a7a7;
+}
+.InputNumberField {
+  border: 1px solid #a7a7a7;
+  border-radius: 8px;
+  width: 95%;
+  height: 48px;
+  padding-left: 10px;
+  color: #a7a7a7;
+}
+.InputNumberField::-webkit-outer-spin-button,
+.InputNumberField::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.DownBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 18%; */
+  width: max-content;
+  border-radius: 100px;
+  padding: 15px 30px;
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  color: #0f2d25;
+  background: white;
+}
+.SubmitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  /* width: 17%; */
+  width: max-content;
+  background: linear-gradient(135deg, #0f2d25 11.2%, #217a77 100%);
+  border-radius: 100px;
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .AECPText {
+    font-size: 18px !important;
+    padding-left: 25px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .AECP-para {
+    font-size: 15px !important;
+  }
+  .SubcriptionDiv span {
+    font-size: 15px !important;
+  }
+  .AboutHeading {
+    font-size: 32px !important;
+    line-height: 30px !important;
+  }
+  .AECPText {
+    font-size: 17px !important;
+    padding-left: 15px !important;
+  }
+  .sideBar {
+    width: 30% !important;
+  }
+  .mainContent {
+    margin-top: 20px !important;
+    /* width: 70% !important; */
+    width: 100% !important;
+  }
+  .MemberShipDiv h4 {
+    font-size: 25px !important;
+  }
+  .MemberShipCard {
+    width: 65% !important;
+  }
+  .MemberShipCard h5 {
+    font-size: 20px !important;
+  }
+  .NewsPara {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .AboutContainer {
+    padding: 65px !important;
+  }
+  .AECPdiv {
+    height: 60px !important;
+  }
+  .AECPText {
+    font-size: 16px !important;
+    padding: 0px 12px !important;
+    line-height: 20px !important;
+  }
+  .AboutHeading {
+    font-size: 25px !important;
+    line-height: 20px !important;
+  }
+  .AECP-para {
+    font-size: 14px !important;
+    line-height: 19px !important;
+  }
+  .SubcriptionDiv span {
+    font-size: 14px !important;
+  }
+  .MemberShipDiv h4 {
+    font-size: 25px !important;
+    line-height: 20px !important;
+  }
+  .MemberShipCard h5 {
+    font-size: 17px !important;
+    line-height: 20px !important;
+  }
+  .MemberShipCard p {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+  .fee {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+  .MemberShipCard {
+    width: 100% !important;
+  }
+
+  .AccordionHeading {
+    font-size: 18px !important;
+    line-height: 20px !important;
+  }
+  .AccordionText {
+    font-size: 14px !important;
+  }
+  .inputLabel {
+    font-size: 14px !important;
+    margin-bottom: 3px !important;
+  }
+  .BtnDiv {
+    justify-content: center !important;
+  }
+  .DownBtn {
+    padding: 10px 0px !important;
+    width: 41% !important;
+    font-size: 15px !important;
+  }
+  .SubmitBtn {
+    padding: 10px 0px !important;
+    width: 40% !important;
+    font-size: 15px !important;
+  }
+  .NewsPara {
+    font-size: 14px !important;
+    line-height: 19px !important;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .DownBtn {
+    padding: 7px 0px !important;
+    width: 50% !important;
+    font-size: 15px !important;
+  }
+  .SubmitBtn {
+    padding: 7px 0px !important;
+    width: 45% !important;
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .NewsHeading {
+    font-size: 20px !important;
+    line-height: 25px !important;
+  }
+
+  .HistoryModalDiv {
+    padding: 10px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .AboutContainer {
+    /* padding: 40px !important; */
+    padding: 20px !important;
+  }
+  .AboutHeading {
+    font-size: 22px !important;
+    line-height: 20px !important;
+  }
+  .MemberShipDiv h4 {
+    font-size: 22px !important;
+    line-height: 10px !important;
+  }
+  .NewsHeading {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+  .AECPBody {
+    padding: 25px 15px !important;
+  }
+  .NameCnic,
+  .CityPhone,
+  .AddressEmail {
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 15px;
+  }
+  .modalImg::before {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .modalImg::before {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ACEP TEAM  tab css*/
+
+.CommitteeDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 6rem;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.AECPJudges {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 3rem;
+  padding-top: 20px;
+}
+.memberCardDiv {
+  display: flex;
+  flex-direction: column;
+}
+.memberCard1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 230px;
+  transition: all 1.5s;
+  filter: drop-shadow(0px 3.5px 17.5px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+}
+.memberCard1:hover {
+  transform: scale(1.05);
+}
+.memberCard1::after {
+  transition: all 0.5s;
+  border-radius: 20px;
+  /* box-shadow: inset 0 -25px 30px 10px rgba(0, 0, 0, 0.9); */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, #000000 115%);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.memberCard1:hover::after {
+  /* box-shadow: inset 0 -30px 30px 10px rgba(0, 0, 0, 0.9); */
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) -3%, #000000 115%);
+}
+.MemberImages {
+  position: relative;
+  display: flex;
+  border-radius: 14px;
+  width: 100%;
+  height: 230px;
+}
+
+.NameDesc {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%); */
+}
+.memberCard1:hover .NameDesc {
+  position: absolute;
+  transition: all 0.5s;
+  transform: translateY(-50px);
+  /* bottom: 20%; */
+}
+
+.MemberName {
+  /* position: absolute; */
+  font-family: "Crimson Text";
+  font-weight: 700;
+  font-size: 19.6px;
+  line-height: 20px;
+  color: #ffffff;
+  bottom: 20px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.MemberDesc {
+  /* position: absolute; */
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18.2px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #ffffff;
+  bottom: -10px;
+}
+
+.BreedCouncilDiv {
+  margin-top: 9%;
+}
+.NationalCommitteeDiv {
+  margin-top: 9%;
+}
+.InspectorsDiv {
+  margin-top: 30px;
+}
+
+.ModalMemberName {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 29px;
+  display: flex;
+  flex-direction: column;
+  color: #0f2d25;
+}
+.ModalMemberPosition {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #5f5f5f;
+  margin-top: 10px;
+}
+.personDetails {
+  display: flex;
+  gap: 20px;
+}
+.PersonImage {
+  width: 168px;
+  /* width: 15%; */
+  height: 186px;
+  border-radius: 20px;
+}
+.personInfoDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.NameDiv {
+  display: flex;
+  gap: 40px;
+}
+.PositionDiv {
+  display: flex;
+  gap: 52px;
+}
+.AddressDiv {
+  display: flex;
+  gap: 52px;
+}
+.PhoneDiv {
+  display: flex;
+  gap: 62px;
+}
+.EmailDiv {
+  display: flex;
+  gap: 66px;
+}
+.SocialDiv {
+  display: flex;
+  gap: 20px;
+}
+/* .ValueDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 9.5px;
+} */
+.fName {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  /* display: flex;
+  align-items: center; */
+  color: #0f2d25;
+}
+.fNameValue {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* display: flex;
+  align-items: center; */
+  color: #5f5f5f;
+}
+
+.FB,
+.tweeter {
+  width: 24.71px;
+  /* height: 19.71px; */
+}
+.PersonDesc {
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #5f5f5f;
+  margin-top: 30px;
+}
+
+/* News And Update Pagination css */
+
+.breed-list ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  list-style-type: none;
+  padding: 0;
+}
+.APIcontent ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.breed-list li {
+  font-size: 18px;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #0f2d25;
+  float: left;
+}
+
+/* News And Update Pagination css end */
+
+@media screen and (max-width: 1199px) {
+  .MemberName {
+    font-size: 16.6px !important;
+    line-height: 5px !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .fName {
+    font-size: 18px !important;
+  }
+  .fNameValue {
+    font-size: 17px !important;
+  }
+  .PersonDesc {
+    font-size: 15px !important;
+  }
+  .ModalMemberName,
+  .ModalMemberPosition {
+    font-size: 26px !important;
+  }
+  .standardModalText {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .personDetails {
+    flex-direction: column;
+  }
+  .PersonDesc {
+    font-size: 14px !important;
+    line-height: 19px !important;
+  }
+  .ModalMemberName,
+  .ModalMemberPosition {
+    font-size: 24px !important;
+  }
+  .standardHeading {
+    font-size: 18px !important;
+  }
+  .standardModalText {
+    font-size: 14px !important;
+    line-height: 19px !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .BreedCouncilDiv {
+    margin-top: 18% !important;
+  }
+  .BreedModalDiv {
+    padding: 10px !important;
+  }
+  .NationalCommitteeDiv {
+    margin-top: 18% !important;
+  }
+  .ModalMemberName,
+  .ModalMemberPosition {
+    font-size: 22px !important;
+  }
+  .fName {
+    font-size: 16px !important;
+  }
+  .fNameValue {
+    font-size: 15px !important;
+  }
+  .FB,
+  .tweeter {
+    width: 20.71px !important;
+    height: 20.71px !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  .BreedCouncilDiv {
+    margin-top: 25% !important;
+  }
+  .NationalCommitteeDiv {
+    margin-top: 25% !important;
+  }
+  .NameDiv {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .PositionDiv {
+    flex-direction: column;
+    gap: 0px;
+  }
+  * .AddressDiv {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .PhoneDiv {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .EmailDiv {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .SocialDiv {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .fName {
+    font-size: 15px !important;
+  }
+  .fNameValue {
+    font-size: 14px !important;
+  }
+  .standardHeading {
+    font-size: 17px !important;
+    line-height: 22px !important;
+  }
+}
+
+.newsMainCard {
+  padding: 20px 0px 20px 20px;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.NewsHeadingDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.NewsHeading {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #0f2d25;
+}
+
+.NewsDateDiv {
+  background: linear-gradient(135deg, #0f2d25 11.2%, #217a77 100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 5px 10px;
+}
+.NewsDate {
+  font-family: "Crimson Text";
+  font-style: normal;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+}
+.NewsYear {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: white;
+}
+
+.NewsPara {
+  /* font-family: 'Inter'; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #5f5f5f;
+}
+.ViewFuLLNews {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #c0a147;
+}
+
+.ViewFuLLNews:hover {
+  cursor: pointer;
+  background: linear-gradient(135deg, #0f2d25 11.2%, #217a77 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 1px solid lightgray;
+}
+
+/* sidebar css code  */
+.mobileContent {
+  display: none !important;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .AboutRow {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+  .mobileContent {
+    display: block !important;
+  }
+  .desktopContent {
+    display: none !important;
+  }
+}

@@ -1,0 +1,167 @@
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title h2 {
+  font-family: "Crimson Text";
+  margin-bottom: 0;
+}
+
+.breed-image {
+  display: flex;
+  align-items: flex-start;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  /* max-width: 20%; */
+}
+
+.breed-image img {
+  width: 100%;
+}
+
+.breed-image {
+  border-radius: 20px;
+}
+
+.breed-table {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  margin: 1rem 0;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+}
+
+.breed-table table {
+  border-spacing: 10px;
+  width: max-content;
+  /* border-spacing: 20px 20px; */
+}
+
+.breed-table td:first-child {
+  font-family: "Crimson Text";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.breed-table td:last-child {
+  color: #5f5f5f;
+  font-family: "Numnito";
+  font-size: 18px;
+}
+
+.breed-table h1 {
+  font-family: "Crimson Text";
+}
+
+.faul-parent h2 {
+  font-family: "Crimson Text";
+  font-size: 1.8em;
+}
+
+.parent-details {
+  display: flex;
+  margin: 1rem 0;
+  column-gap: 15%;
+  /* justify-content: space-between; */
+}
+
+.detail-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito";
+  width: 40%;
+}
+
+.detail-list li {
+  margin-bottom: 0.5rem;
+}
+
+.detail-list span {
+  font-size: large;
+  font-family: "Crimson Text";
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.foals-information h2 {
+  font-family: "Crimson Text";
+  font-size: 1.8em;
+}
+
+.stud-table {
+  border-collapse: collapse;
+  width: 100%;
+  /* border-spacing: 10px 30px; */
+}
+
+.table-header {
+  font-family: "Crimson Text";
+  font-size: 17px;
+  background-color: #c0a147;
+  color: white;
+}
+
+.table-header th {
+  padding: 10px;
+}
+
+.table-header th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table-header th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.stud-table tr {
+  border-bottom: 0.01rem solid #5f5f5f;
+}
+
+.stud-table td {
+  text-align: center;
+  padding: 10px;
+  color: #5f5f5f;
+  font-family: "Nunito";
+}
+
+@media screen and (max-width: 1200px) {
+  .breed-table {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .breed-image {
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    /* max-width: 20%; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .breed-table {
+    align-items: center;
+  }
+
+  .breed-table table {
+    width: min-content;
+  }
+
+  .parent-details {
+    flex-direction: column;
+  }
+
+  .detail-list {
+    width: auto;
+  }
+
+  .table {
+    overflow: scroll;
+  }
+}

@@ -1,0 +1,260 @@
+.news {
+  margin-top: 3rem;
+}
+
+.news > h1,
+.news > p {
+  text-align: center;
+}
+
+.news-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.news-card {
+  width: 32%;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 0 1.5rem;
+}
+
+.news-card h3 {
+  font-family: "Crimson Text";
+  margin-right: 1rem;
+}
+
+.news-card p {
+  font-family: "Nunito";
+  color: #5f5f5f;
+}
+
+.news-card > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.date {
+  width: 20%;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #103028;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.date img {
+  position: absolute;
+  width: 100%;
+}
+
+.date p {
+  color: white;
+  text-align: center;
+  font-family: "Crimson Text";
+  margin: 0;
+}
+
+.view {
+  margin-bottom: 1rem;
+  padding: 0.1rem !important;
+  /* text-align: center; */
+}
+
+.view span {
+  color: #c0a147;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+.view span:hover {
+  color: #0f2d25;
+  border-bottom: 1px solid #0f2d25;
+}
+.BreedModalDiv {
+  overflow-y: scroll;
+  max-height: 100%;
+  height: 100%;
+  padding: 30px 50px;
+}
+
+.ModalMemberName {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 29px;
+  display: flex;
+  flex-direction: column;
+  color: #0f2d25;
+}
+.ModalMemberPosition {
+  font-family: "Crimson Text";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #5f5f5f;
+  margin-top: 10px;
+}
+.modalImg {
+  position: relative;
+  width: 100%;
+}
+.modalImg::before {
+  content: "";
+  background-image: url("../../../assets/images/image.png");
+  background-size: cover;
+  position: absolute;
+  opacity: 0.05;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* width: 60%; */
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+.standardModalText {
+  /* font-family: 'Inter'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #5f5f5f;
+}
+/* Global */
+.main-heading {
+  /* text-align: center; */
+  font-family: "Crimson Text";
+  color: #0f2d25;
+  font-size: 34px;
+  position: relative;
+  margin: 1rem auto;
+  width: max-content;
+}
+
+.main-heading:after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../../assets/images/heading-dec.png");
+  background-size: 40px;
+  position: absolute;
+  top: -30px;
+  right: -32px;
+  width: 40px;
+  height: 40px;
+}
+
+.btn {
+  /* align-items: center; */
+  margin: auto;
+  display: flex;
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+  width: max-content;
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.btn-text {
+  display: flex;
+  align-items: center;
+  transition: color 1s;
+  font-size: larger;
+  color: black;
+}
+
+.btn::before {
+  border-radius: 100px;
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 30%;
+  height: 100%;
+  background: rgba(192, 161, 71, 0.3);
+  /* background: #0f2d25; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn:hover::before {
+  width: 100%;
+  background: #0f2d25;
+}
+
+.btn:hover .btn-text {
+  color: white;
+}
+
+.btn span {
+  z-index: 10;
+}
+
+@media screen and (max-width: 1025px) {
+  .news-cards {
+    row-gap: 30px;
+  }
+
+  .news-card {
+    width: 40%;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .ModalMemberName,
+  .ModalMemberPosition {
+    font-size: 26px !important;
+  }
+  .standardModalText {
+    font-size: 15px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  
+  .ModalMemberName,
+  .ModalMemberPosition {
+    font-size: 24px !important;
+  }
+  .standardModalText {
+    font-size: 14px !important;
+    line-height: 19px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .BreedModalDiv {
+    padding: 10px !important;
+  }
+}
+@media screen and (max-width: 426px) {
+  .news-card {
+    width: 90%;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 0 1.5rem;
+  }
+  .modalImg::before {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .modalImg::before {
+    width: 200px;
+    height: 200px;
+  }
+}
